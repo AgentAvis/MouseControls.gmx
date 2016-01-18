@@ -58,12 +58,41 @@ if keyboard_check_pressed(ord('P')) { if room_exists(room_next(room)) room_goto_
 
 if keyboard_check_pressed(ord('O')) { if room_exists(room_previous(room)) room_goto_previous();  }
 
-if keyboard_check_pressed(ord('L')) { global.debug = !global.debug }
+if keyboard_check_pressed(ord('L')) { if instance_exists(oLightingController) { with (oLightingController) { instance_destroy() } } else { instance_create(mouse_x,mouse_y,oLightingController) } }
 
+if keyboard_check_pressed(ord('K')) { global.debug = !global.debug }
 
+if keyboard_check_pressed(ord('R')) { room_restart() }
 
-
-
+//SPAWNING START
+    if keyboard_check(vk_numpad0) {
+    
+        if keyboard_check(vk_numpad1) {
+            child = instance_create(mouse_x,mouse_y,oBullet)
+            with (child) { size = 150 }
+        }
+        if keyboard_check(vk_numpad2) {
+            instance_create(mouse_x,mouse_y,oPlayer)
+        }
+        if keyboard_check(vk_numpad3) {
+            instance_create(mouse_x,mouse_y,oFood)
+        }
+    
+    } else {
+    
+        if keyboard_check_pressed(vk_numpad1) {
+            child = instance_create(mouse_x,mouse_y,oBullet)
+            with (child) { size = 150 }
+        }
+        if keyboard_check_pressed(vk_numpad2) {
+            instance_create(mouse_x,mouse_y,oPlayer)
+        }
+        if keyboard_check_pressed(vk_numpad3) {
+            instance_create(mouse_x,mouse_y,oFood)
+        }
+    
+    }
+//SPAWNING END
 
 
 

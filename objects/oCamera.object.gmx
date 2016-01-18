@@ -57,28 +57,6 @@ instance_create(x,y,oMouse)
             <kind>1</kind>
             <string>if instance_exists(global.Focus) {
 
-with (global.Focus) { 
-
-if oBullet1 = true 
-{
-
-//with (oFood) { depth = -1001 }   
-
-} else {
-
-with (oFood) { depth = 0 } 
-
-
-}
-
-} 
-
-
-
-
-
-
-
 x = global.Focus.x
 y = global.Focus.y
 speed = global.Focus.speed
