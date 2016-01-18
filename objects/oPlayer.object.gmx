@@ -136,6 +136,10 @@ if (Focus) {
     ScCollision2()
     ScHunt()
     
+    if instance_exists(oFood) {
+        NearestFood = instance_nearest(x,y,oFood)
+        if distance_to_object( NearestFood ) &lt; 100 { ScReproduce() } 
+    }
     if size &gt; 700{
         ScReproduce()
     } 
