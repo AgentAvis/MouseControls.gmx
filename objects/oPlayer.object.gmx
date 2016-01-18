@@ -38,7 +38,7 @@ oBullet1 = false
 
 firstplayer = false
 
-repeat (9) {
+repeat (6) {
     String = instance_copy(false)
         with (String) {
             instance_change(oString,true)

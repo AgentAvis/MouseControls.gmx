@@ -41,12 +41,14 @@
     <sprite>sprites\sprite10</sprite>
     <sprite>sprites\sPredator</sprite>
     <sprite>sprites\sFish</sprite>
+    <sprite>sprites\sprite14</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
     <background>background\background3</background>
     <background>background\background4</background>
+    <background>background\bTitle</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -67,6 +69,7 @@
     <script>scripts\instance_nth_nearest.gml</script>
     <script>scripts\ScCanSee.gml</script>
     <script>scripts\InTheView.gml</script>
+    <script>scripts\ScFoodCreate.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oLightingController</object>
@@ -86,12 +89,15 @@
     <object>objects\oCamera</object>
     <object>objects\oMouse</object>
     <object>objects\oDj</object>
+    <object>objects\oContinue</object>
+    <object>objects\gotonext</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room3</room>
+    <room>rooms\rMenu</room>
     <room>rooms\room0</room>
-    <room>rooms\room2</room>
     <room>rooms\room1</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

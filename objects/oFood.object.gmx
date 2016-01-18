@@ -26,12 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>ID = id
+Life = random_range( 15,120 )
 StringNum = 2
 Timerrr = 0
 TimeAlive = 0
 Fetile = false
-FertileTime = random_range(room_speed, room_speed * 10)
-
+FertileTime = random_range(room_speed / 2, room_speed * 10)
+Speed = random_range(1.5,4.5)
+sight = random_range(32,180)
 
 repeat (1) {
     String = instance_copy(false)
@@ -43,6 +45,8 @@ repeat (1) {
             First = true
         }
 }
+
+
 </string>
           </argument>
         </arguments>
@@ -65,7 +69,7 @@ repeat (1) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 3
+            <string>speed = Speed
 if place_meeting(x,y,oSolid) {
     move_bounce_all(true)
 }
@@ -79,28 +83,31 @@ if instance_exists(oPlayerParent) {
     if distance_to_object(Hunt) &lt; 230 {
         
         DesDir = point_direction(x,y,Hunt.x,Hunt.y) + 180
-        direction = angle_approach(direction,DesDir,2)
+        direction = angle_approach(direction,DesDir,.5)
     
     } else {direction += random_range(-20,20)}
     
 } else { direction += random_range(-20,20) }
 
-if TimeAlive &gt; FertileTime {Fetile = true} else { TimeAlive += 1 }
+//if TimeAlive &gt; FertileTime {Fetile = true} else { TimeAlive += 1 }
 
 if instance_number(oFood) &lt; 100 - (instance_number(oPlayerParent) * 4 ){
 
-image_index = sFoodDivide
+//image_index = sFoodDivide
 
 Timerrr += 1
-if Timerrr &gt; image_speed and Fetile = true {
+if Timerrr &gt; FertileTime {
+    
+    
+    repeat (2) {
+        child = instance_copy(false)
+        with (child) { ScFoodCreate() } 
+    }
     
     instance_destroy()
-    repeat (2) { instance_create(x,y,oFood) }
+}}
 
-
-
-}
-}
+if TimeAlive &gt; room_speed * Life { instance_destroy()} else { TimeAlive += 1 }
 </string>
           </argument>
         </arguments>
@@ -127,6 +134,54 @@ if Timerrr &gt; image_speed and Fetile = true {
 var_dir = point_direction(x,y,other.x,other.y)
 x = x+lengthdir_x(-1,var_dir)
 y = y+lengthdir_y(-1,var_dir)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self()
+
+
+vari = random_range(-40,40)
+X = x + lengthdir_x(sight, image_angle + vari)
+Y = y + lengthdir_y(sight, image_angle + vari)
+
+if global.debug = true {
+        draw_set_color(c_red)
+        draw_line(x,y,X,Y)
+    }
+
+
+if collision_line(x,y,X,Y,oSolid,false,true) {
+    //if global.debug = true {
+    //    draw_set_color(c_red)
+    //    draw_line(x,y,X,Y)
+    // }
+    direction += 20
+    //
+    //    
+    //    if image_angle &gt; 90 and image_angle &lt; 270 {
+    //    direction += 10 } else { 
+    //    direction -= 10 }
+    //
 }
 </string>
           </argument>
