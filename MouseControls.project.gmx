@@ -76,6 +76,8 @@
     <script>scripts\ScPlayerCreate.gml</script>
     <script>scripts\ScFoodCreate.gml</script>
     <script>scripts\ScCannibalism.gml</script>
+    <script>scripts\ScDodge.gml</script>
+    <script>scripts\ScMove.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oLightingController</object>

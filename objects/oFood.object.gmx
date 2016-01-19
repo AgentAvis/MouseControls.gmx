@@ -28,9 +28,13 @@
             <string>ID = id
 Life = random_range( 15,120 )
 StringNum = 2
+
+dir = ceil(random_range(0,2))
+
 Timerrr = 0
 TimeAlive = 0
 Fetile = false
+color = c_red
 FertileTime = random_range(room_speed / 2, room_speed * 10)
 Speed = random_range(1.5,4.5)
 sight = random_range(32,180)
@@ -161,29 +165,7 @@ y = y+lengthdir_y(-1,var_dir)
             <string>draw_self()
 
 
-vari = random_range(-40,40)
-X = x + lengthdir_x(sight, image_angle + vari)
-Y = y + lengthdir_y(sight, image_angle + vari)
-
-if global.debug = true {
-        draw_set_color(c_red)
-        draw_line(x,y,X,Y)
-    }
-
-
-if collision_line(x,y,X,Y,oSolid,false,true) {
-    //if global.debug = true {
-    //    draw_set_color(c_red)
-    //    draw_line(x,y,X,Y)
-    // }
-    direction += 20
-    //
-    //    
-    //    if image_angle &gt; 90 and image_angle &lt; 270 {
-    //    direction += 10 } else { 
-    //    direction -= 10 }
-    //
-}
+ScDodge()
 </string>
           </argument>
         </arguments>
