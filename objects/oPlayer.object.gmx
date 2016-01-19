@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Children = 0
+            <string>Bimerr = 0
+Children = 0
+Agility = random_range(2,6)
 Timerr = 0
 sizetimerr = 0
 size = 400
@@ -33,6 +35,9 @@ ID = id
 StringNum = 5
 overide = false
 Loop = 1
+
+color = make_colour_hsv(random(255), 255, 255)
+image_blend = color
 
 oBullet1 = false
 
@@ -50,6 +55,9 @@ repeat (6) {
 }
 
 Focus = false
+
+
+
 </string>
           </argument>
         </arguments>
@@ -138,7 +146,7 @@ if (Focus) {
     
     if instance_exists(oFood) {
         NearestFood = instance_nearest(x,y,oFood)
-        if distance_to_object( NearestFood ) &lt; 100 { ScReproduce() } 
+        if distance_to_object( NearestFood ) &lt; 50 { Bimerr += 1 if Bimerr &gt; room_speed / 2 { ScReproduce() Bimerr = 0 } } 
     }
     if size &gt; 700{
         ScReproduce()

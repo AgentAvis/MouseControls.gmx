@@ -28,11 +28,14 @@
             <string>Children = 0
 ID = id
 StringNum = 6
+Agility = random_range(2,6)
 Loop = 1
 
 oBullet1 = true
 overide = false
 
+color = make_colour_hsv(random(255), 255, 255)
+image_blend = color
 
 Timerr = 0
 
@@ -49,6 +52,8 @@ repeat (ceil(random(3))) {
             First = true
         }
 }
+
+
 </string>
           </argument>
         </arguments>
@@ -151,9 +156,9 @@ if image_xscale &gt; 1 { image_xscale -= .02 }
 
 //grow
 if size &gt; 750 * 1.5 {
- Me = instance_change(oPlayer,true)  
- 
- 
+    Me = instance_copy(false)  
+    with (Me) { instance_change(oPlayer,false) ScPlayerCreate() }
+    instance_destroy()
 }
 </string>
           </argument>

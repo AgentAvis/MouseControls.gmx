@@ -126,7 +126,8 @@ instance_destroy()
           <argument>
             <kind>1</kind>
             <string>if instance_exists(ID) {
-draw_set_color(c_green)
+with (ID) { other.color = color }
+draw_set_color(color)
 draw_line(x,y,ID.x,ID.y)
 }
 </string>

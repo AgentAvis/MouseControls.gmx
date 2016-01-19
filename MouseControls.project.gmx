@@ -49,6 +49,7 @@
     <background>background\background3</background>
     <background>background\background4</background>
     <background>background\bTitle</background>
+    <background>background\Gamestuff</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -69,6 +70,8 @@
     <script>scripts\instance_nth_nearest.gml</script>
     <script>scripts\ScCanSee.gml</script>
     <script>scripts\InTheView.gml</script>
+    <script>scripts\ScBulletCreate.gml</script>
+    <script>scripts\ScPlayerCreate.gml</script>
     <script>scripts\ScFoodCreate.gml</script>
   </scripts>
   <objects name="objects">
@@ -90,15 +93,19 @@
     <object>objects\oMouse</object>
     <object>objects\oDj</object>
     <object>objects\oContinue</object>
+    <object>objects\oControls</object>
+    <object>objects\oCredits</object>
+    <object>objects\object21</object>
     <object>objects\gotonext</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room3</room>
-    <room>rooms\room5</room>
     <room>rooms\rMenu</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\room2</room>
+    <room>rooms\room5</room>
+    <room>rooms\rControls</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

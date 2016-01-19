@@ -1,13 +1,17 @@
 //shooty
 
-Bullet = instance_create(x,y,oBullet)
+Bullet = instance_copy(false)
 
     with (Bullet) {
+
+        instance_change(oBullet,false)    
+            
+        ScBulletCreate()
     
         speed = other.speed + 5
         
         size = other.size * .5
-        
+            
         direction = other.image_angle
     
     }
