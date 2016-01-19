@@ -10,6 +10,7 @@
         StringNum = 5
         overide = false
         Loop = 1
+        loop = 1
         //color is already defined
         oBullet1 = false
         firstplayer = false

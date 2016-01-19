@@ -34,7 +34,8 @@ Fetile = false
 FertileTime = random_range(room_speed / 2, room_speed * 10)
 Speed = random_range(1.5,4.5)
 sight = random_range(32,180)
-
+image_speed = .25
+/*
 repeat (1) {
     String = instance_copy(false)
         with (String) {

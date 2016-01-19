@@ -5,6 +5,7 @@ FertileTime = random_range(room_speed / 2, room_speed * 10)
 Timerrr = 0
 TimeAlive = 0
 Fetile = false
+/*
 repeat (1) {
     String = instance_copy(false)
         with (String) {

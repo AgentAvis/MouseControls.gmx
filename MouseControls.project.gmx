@@ -61,18 +61,21 @@
     <script>scripts\ScCollision2.gml</script>
     <script>scripts\ScPlayerMovement.gml</script>
     <script>scripts\ScReproduce.gml</script>
+    <script>scripts\ScReproduce2.gml</script>
     <script>scripts\script7.gml</script>
     <script>scripts\ScHunt.gml</script>
     <script>scripts\ScHunt3.gml</script>
     <script>scripts\ScHunt2.gml</script>
     <script>scripts\ScEat.gml</script>
     <script>scripts\ScEat2.gml</script>
+    <script>scripts\ScEat3.gml</script>
     <script>scripts\instance_nth_nearest.gml</script>
     <script>scripts\ScCanSee.gml</script>
     <script>scripts\InTheView.gml</script>
     <script>scripts\ScBulletCreate.gml</script>
     <script>scripts\ScPlayerCreate.gml</script>
     <script>scripts\ScFoodCreate.gml</script>
+    <script>scripts\ScCannibalism.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oLightingController</object>
@@ -97,6 +100,7 @@
     <object>objects\oCredits</object>
     <object>objects\object21</object>
     <object>objects\gotonext</object>
+    <object>objects\oTodo</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room3</room>

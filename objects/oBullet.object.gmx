@@ -41,8 +41,8 @@ Timerr = 0
 
 Focus = false
 
-repeat (ceil(random(3))) {
-    StringNum = ceil(random_range(3,6))
+repeat (2) {
+    StringNum = ceil(random_range(3,5))
     String = instance_copy(false)
         with (String) {
             instance_change(oString,true)
@@ -137,7 +137,6 @@ if (Focus) {
 
     ScCollision()
     ScPlayerMovement()
-    ScHunt2()
     ScEat2()
 
 } else {

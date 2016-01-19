@@ -32,8 +32,9 @@ Timerr = 0
 sizetimerr = 0
 size = 400
 ID = id
-StringNum = 5
+StringNum = 4
 overide = false
+loop = 1
 Loop = 1
 
 color = make_colour_hsv(random(255), 255, 255)
@@ -43,7 +44,7 @@ oBullet1 = false
 
 firstplayer = false
 
-repeat (6) {
+repeat (5) {
     String = instance_copy(false)
         with (String) {
             instance_change(oString,true)
@@ -83,9 +84,9 @@ Focus = false
             <string>if instance_exists(oLightingController) {
     
     if size &lt; 750 {
-        size += 1
+        size += .75
     }
-    Size = size * 2 
+    Size = size * 1.5 
     draw_set_blend_mode(bm_subtract)
     surface_set_target(global.light)
     draw_ellipse_color(x-Size/2-view_xview,y-Size/2-view_yview,x+Size/2-view_xview,y+Size/2-view_yview,c_white,c_black,false)
@@ -133,7 +134,7 @@ if (Focus) {
       
     ScCollision()
     ScPlayerMovement()
-    
+    ScEat3()
     if keyboard_check_pressed(vk_space) {
         ScReproduce()
     } 
@@ -142,13 +143,14 @@ if (Focus) {
     
     image_angle = direction
     ScCollision2()
-    ScHunt()
+    //ScHunt()
+    ScCannibalism()
     
     if instance_exists(oFood) {
         NearestFood = instance_nearest(x,y,oFood)
-        if distance_to_object( NearestFood ) &lt; 50 { Bimerr += 1 if Bimerr &gt; room_speed / 2 { ScReproduce() Bimerr = 0 } } 
+        if distance_to_object( NearestFood ) &lt; 25 { Bimerr += 1 if Bimerr &gt; room_speed / 2 { ScReproduce() Bimerr = 0 } } 
     }
-    if size &gt; 700{
+    if size &gt; 749{
         ScReproduce()
     } 
 
@@ -157,7 +159,7 @@ if (Focus) {
 //unstretch
 if image_xscale &gt; 1 { image_xscale -= .02 }
 
-if Children &gt; 2 { instance_destroy() }
+if Children &gt; 4 { instance_destroy() }
 
 
 
