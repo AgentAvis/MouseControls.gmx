@@ -81,8 +81,8 @@ repeat (2) {
             <string>if instance_exists(oLightingController) {
 
      if Focus = false {
-         if size &gt; 0 { size -= .4 } else { 
-            image_alpha -= .05
+         if size &gt; 0 { size -= 1 } else { 
+            image_alpha -= .25
             if image_alpha &lt; .05 { instance_destroy() Focus = false }
          }
         SIze = size //* .5

@@ -5,7 +5,7 @@
     StringNum = 6
     //Agility is already defined
     Loop = 1
-    
+    image_alpha = 1
     oBullet1 = true
     overide = false
     

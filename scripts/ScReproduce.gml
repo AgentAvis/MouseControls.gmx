@@ -10,6 +10,8 @@ Bullet = instance_copy(false)
     
         speed = other.speed + 5
         
+        image_alpha = 1
+        
         size = other.size * .5
             
         direction = other.image_angle

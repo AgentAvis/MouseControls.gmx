@@ -48,9 +48,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_number(oFood) &lt; 1{
+            <string>if instance_number(oFood) &lt; 200{
 
-    repeat (10) {instance_create(x,y,oFood)}
+Timerr += 1
+
+    if Timerr &gt; 40 * room_speed {
+    
+        repeat (12) {
+        
+        Baby = instance_create(x,y,oFood)
+        with (Baby) { direction = 90 }
+        
+    }
+    
+    Timerr = 0
+    
+    }
 
 } 
 </string>

@@ -4,7 +4,7 @@ if instance_exists(victim) {
             
             with (victim) {instance_destroy()}
             
-            ScReproduce2()
+            //ScReproduce2()
             
         }
     }

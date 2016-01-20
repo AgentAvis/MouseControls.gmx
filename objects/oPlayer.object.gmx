@@ -36,6 +36,8 @@ StringNum = 4
 overide = false
 loop = 1
 Loop = 1
+Health = 100
+slimerr = 0
 
 dir = ceil(random_range(0,2))
 
@@ -136,6 +138,18 @@ if Timerr &lt; room_speed * .5 + 3{ Timerr += 1 }
 
 if id = global.Focus { Focus = true} else { Focus = false }
 
+//combat v
+
+Enemy = instance_place(x,y,oPlayer)
+if instance_exists(Enemy) {
+    if Enemy.color != color {
+    //fite it
+    with (Enemy) { if other.speed &gt; speed {image_alpha = image_alpha * .8} }
+
+}}
+
+//combat ^
+
 if (Focus) {
     
     //ScAttackPlayer()
@@ -159,7 +173,11 @@ if (Focus) {
         if distance_to_object( NearestFood ) &lt; 25 { Bimerr += 1 if Bimerr &gt; room_speed / 2 { ScReproduce() Bimerr = 0 } } 
     }
     if size &gt; 749{
+    slimerr += 1
+    if slimerr &gt; room_speed * 10 {
         ScReproduce()
+        slimerr = 0
+        }
     } 
 
 }
@@ -223,6 +241,10 @@ y = y+lengthdir_y(-1,var_dir)
           <argument>
             <kind>1</kind>
             <string>draw_self()
+
+//image_alpha = Health / 100
+
+if image_alpha &lt; .1 { instance_destroy() }
 
 if (!Focus) {
 sight = speed * 20

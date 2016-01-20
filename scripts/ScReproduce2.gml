@@ -7,6 +7,8 @@ Bullet = instance_copy(false)
         instance_change(oBullet,false)    
             
         ScBulletCreate()
+        
+        image_alpha = 1
     
         speed = other.speed + 5
         

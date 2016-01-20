@@ -4,6 +4,7 @@
         Children = 0
         //agility is already defined
         Timerr = 0
+        slimerr = 0
         sizetimerr = 0
         size = 400
         ID = id
