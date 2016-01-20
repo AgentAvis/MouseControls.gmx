@@ -52,6 +52,30 @@
   </views>
   <instances>
     <instance objName="oControls" x="480" y="622" name="inst_4A7BE21C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDirt" x="-96" y="224" name="inst_1BC9040F" locked="0" code="" scaleX="10" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="oDirt" x="1216" y="256" name="inst_7103D798" locked="0" code="" scaleX="10" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="oDirt" x="544" y="768" name="inst_532FB7A3" locked="0" code="" scaleX="15" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="oDirt" x="576" y="-96" name="inst_7706C5DA" locked="0" code="" scaleX="15" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="oThing" x="288" y="576" name="inst_2EFEB45F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oThing" x="800" y="576" name="inst_EAA72A3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oThing" x="512" y="576" name="inst_4169A835" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer" x="768" y="352" name="inst_24F47B42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer" x="320" y="480" name="inst_618FB482" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer" x="384" y="192" name="inst_9436912A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="320" y="352" name="inst_6EF28CA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="480" y="288" name="inst_9B0A5A20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="544" y="128" name="inst_8206A25E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="608" y="320" name="inst_C258ED16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="480" y="384" name="inst_BA72EE42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="608" y="416" name="inst_12A99379" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="640" y="416" name="inst_216AD26A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="768" y="160" name="inst_E60254BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="800" y="352" name="inst_1D00A341" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="832" y="448" name="inst_D6266698" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="640" y="576" name="inst_964AE5C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="384" y="512" name="inst_014DF9ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFood" x="256" y="512" name="inst_92923818" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLightingController" x="672" y="96" name="inst_E828B6BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bTitle" x="-2144" y="-448" w="1280" h="1280" xo="0" yo="0" id="10001270" name="inst_A66F16CC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

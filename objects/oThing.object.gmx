@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>Timerr = 0
+SPAWN = false
 </string>
           </argument>
         </arguments>
@@ -52,13 +53,17 @@
 
 Timerr += 1
 
-    if Timerr &gt; 40 * room_speed {
-    
-        repeat (12) {
-        
-        Baby = instance_create(x,y,oFood)
-        with (Baby) { direction = 90 }
-        
+    if random(20 * room_speed) &lt; 1  {
+     SPAWN = true }
+     
+     if instance_exists(oPlayerParent) {
+         if SPAWN = true and distance_to_object(instance_nearest(x,y,oPlayerParent)) &gt; 400 {
+            repeat (15) {
+            
+            Baby = instance_create(x,y,oFood)
+            with (Baby) { direction = 90 }
+            SPAWN = false
+        }
     }
     
     Timerr = 0
@@ -66,6 +71,33 @@ Timerr += 1
     }
 
 } 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self()
+if global.debug = true {
+    draw_set_color(c_red)
+    draw_circle(x,y,400,true)
+}
 </string>
           </argument>
         </arguments>
