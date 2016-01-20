@@ -5,8 +5,11 @@ Y = y + lengthdir_y(sight, image_angle + vari)
 if global.debug = true {
         draw_set_color(color)
         draw_line(x,y,X,Y)
-    } 
+    }
+     
 if collision_line(x,y,X,Y,oSolid,false,true) {
     if dir = 1 {
     direction += 20 } else { direction -= 20 }
 }
+
+

@@ -78,6 +78,7 @@
     <script>scripts\ScCannibalism.gml</script>
     <script>scripts\ScDodge.gml</script>
     <script>scripts\ScMove.gml</script>
+    <script>scripts\ScAttackPlayer__.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oLightingController</object>

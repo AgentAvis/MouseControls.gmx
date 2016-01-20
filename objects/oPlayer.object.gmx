@@ -46,6 +46,11 @@ oBullet1 = false
 
 firstplayer = false
 
+//find the tale spot
+vari = random_range(-40,40)
+xX = x + lengthdir_x(-5, image_angle)
+yY = y + lengthdir_y(-5, image_angle)
+
 repeat (5) {
     String = instance_copy(false)
         with (String) {
@@ -133,7 +138,7 @@ if id = global.Focus { Focus = true} else { Focus = false }
 
 if (Focus) {
     
-      
+    //ScAttackPlayer()
     ScCollision()
     ScPlayerMovement()
     ScEat3()

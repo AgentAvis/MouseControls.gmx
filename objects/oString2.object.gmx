@@ -70,8 +70,8 @@ if First = true{
     
     //IDX = ID.x + lengthdir_x(100,image_angle);
     //IDY = ID.y + lengthdir_y(12,image_angle);
-     IDX = ID.x
-     IDY = ID.y
+     IDX = xX
+     IDY = yY
     
 } else {
 
