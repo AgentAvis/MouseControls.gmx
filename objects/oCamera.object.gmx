@@ -33,6 +33,8 @@ if Target.firstplayer = false {} else { global.Focus = oPlayer }
 }
 
 instance_create(x,y,oMouse)
+
+Full = false
 </string>
           </argument>
         </arguments>
@@ -74,10 +76,16 @@ direction = global.Focus.direction
 
 view_object[0] = oCamera
 
-if keyboard_check(ord('Z')) {
+if keyboard_check_pressed(ord('Z')) {
 
-view_wview[0] = 5048
-view_hview[0] = 3048
+global.Full = !global.Full
+
+}
+
+if global.Full = true {
+
+view_wview[0] = room_width
+view_hview[0] = room_height
 //surface_resize(global.light,5048,3048)
 
 } else {
@@ -87,15 +95,6 @@ view_hview[0] = 768
 //surface_resize(global.light,1024,768)
 
 }
-
-//deactivation code
-
-
-//instance_deactivate_object(oString)
-//instance_deactivate_object(oString2)
-//instance_deactivate_object(oAsteroid)
-//instance_activate_region(view_xview[0],view_yview[0],view_wview[0],view_hview[0],true)
-
 
 
 </string>

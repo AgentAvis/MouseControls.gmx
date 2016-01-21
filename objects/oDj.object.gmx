@@ -28,6 +28,8 @@
             <string>global.controls = 1
 global.Focus = instance_create(x,y,oPlant)
 global.debug = false
+global.Full = false
+global.full = false
 </string>
           </argument>
         </arguments>
