@@ -39,11 +39,11 @@ ScEat3()
 */
 //rewrite
 
-if instance_exists( oBullet ) {
+if instance_exists( oPlayerParent ) {
 
-Bunt = instance_nth_nearest(x,y,oBullet,loop)
+Bunt = instance_nth_nearest(x,y,oPlayerParent,loop)
 
-Punt = instance_nearest(x,y,oBullet)
+Punt = instance_nearest(x,y,oPlayerParent)
 
 if ScCanSee(Punt) and Punt.color != color {
     Bunt = Punt
@@ -54,7 +54,7 @@ if ScCanSee(Punt) and Punt.color != color {
 if ScCanSee(Bunt) and Bunt.color != color {
     Target = Bunt
 } else {
-    if loop < instance_number(oBullet) { loop += 1 } else {loop = 1}
+    if loop < instance_number(oPlayerParent) { loop += 1 } else {loop = 1}
     Target = Punt
 }
 
