@@ -216,8 +216,12 @@ y = y+lengthdir_y(-1,var_dir)
 
 
 if (!Focus) {
-sight = speed * 15
-ScDodge()
+    sight = speed * 15
+    ScDodge()
+}
+
+if (global.debug) {
+draw_text(x,y,string(color))
 }
 </string>
           </argument>
