@@ -30,7 +30,7 @@ Children = 0
 Agility = random_range(2,6)
 Timerr = 0
 sizetimerr = 0
-size = 400
+size = 750 * 1.5
 ID = id
 StringNum = 4
 overide = false
@@ -170,7 +170,7 @@ if (Focus) {
     
     if instance_exists(oFood) {
         NearestFood = instance_nearest(x,y,oFood)
-        if distance_to_object( NearestFood ) &lt; 25 { Bimerr += 1 if Bimerr &gt; room_speed / 2 { ScReproduce() Bimerr = 0 } } 
+        if distance_to_object( NearestFood ) &lt; 25 and size &gt; 500 { Bimerr += 1 if Bimerr &gt; room_speed / 2 { ScReproduce() Bimerr = 0 } } 
     }
     if size &gt; 749{
     slimerr += 1
@@ -244,7 +244,8 @@ y = y+lengthdir_y(-1,var_dir)
 
 //image_alpha = Health / 100
 
-if image_alpha &lt; .1 { instance_destroy() }
+if image_alpha &lt; .25 { instance_destroy() }
+if image_alpha &lt; .99 { image_alpha += .001 }
 
 if (!Focus) {
 sight = speed * 20

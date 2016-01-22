@@ -1,5 +1,5 @@
 //Mock create event
-
+    
     Children = 0
     ID = id
     StringNum = 6
@@ -26,4 +26,13 @@
                 First = true
             }
     }
-
+    
+    if random(30) < 1 { 
+    color += 20
+    
+    
+    
+    
+    
+    
+    }
