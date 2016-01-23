@@ -1,5 +1,7 @@
 //Mock create event
     
+    Gimerr = 0
+    Mutated = false
     Children = 0
     ID = id
     StringNum = 6

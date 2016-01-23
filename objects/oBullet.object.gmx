@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Children = 0
+            <string>mutate = false
+Mutated = false
+Gimerr = 0
+
+Children = 0
 ID = id
 StringNum = 6
 Agility = random_range(2,6)
@@ -35,8 +39,8 @@ dir = ceil(random_range(0,2))
 
 oBullet1 = true
 overide = false
-
-color = make_colour_hsv(random(255), 255, 255)
+hue = random(255)
+color = make_colour_hsv(hue, 255, 255)
 image_blend = color
 
 Timerr = 0
@@ -127,6 +131,20 @@ repeat (2) {
 ScGravity()
 
 ScDrag()
+
+if Mutated = false and mutate = true {
+
+Gimerr += 1
+if Gimerr &gt; room_speed { hue += 15 Mutated = true mutate = true }
+
+
+
+
+}
+
+
+color = make_colour_hsv(hue, 255, 255)
+image_blend = color
 
 //make sure the players movement is always chargeing
 if Timerr &lt; room_speed * .5 + 3{ Timerr += 1 }

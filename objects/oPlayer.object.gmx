@@ -41,7 +41,8 @@ slimerr = 0
 
 dir = ceil(random_range(0,2))
 
-color = make_colour_hsv(random(255), 255, 255)
+hue = random(255)
+color = make_colour_hsv(hue, 255, 255)
 image_blend = color
 
 oBullet1 = false

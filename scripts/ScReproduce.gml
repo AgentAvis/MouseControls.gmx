@@ -15,6 +15,8 @@ Bullet = instance_copy(false)
         size = other.size * .5
             
         direction = other.image_angle
+        
+        if random( 7 ) < 1 { mutate = true } else { mutate = false }
     
     }
 size = size * .5
