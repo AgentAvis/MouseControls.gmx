@@ -25,14 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mutate = false
+            <string>//TailNum vv
+TailNum = random_range(2,7)
+
+mutate = false
 Mutated = false
 Gimerr = 0
 
 Children = 0
 ID = id
 StringNum = 6
-Agility = random_range(2,6)
+Agility = ceil(random_range(0,13))
 Loop = 1
 
 dir = ceil(random_range(0,2))
@@ -47,7 +50,7 @@ Timerr = 0
 
 Focus = false
 
-repeat (2) {
+repeat (TailNum) {
     StringNum = ceil(random_range(3,5))
     String = instance_copy(false)
         with (String) {
@@ -176,6 +179,7 @@ if (Focus) {
 if image_xscale &gt; 1 { image_xscale -= .02 }
 
 //grow
+
 if size &gt; 750 * 1.5 {
     Me = instance_copy(false)  
     with (Me) { instance_change(oPlayer,false) ScPlayerCreate() }
@@ -239,7 +243,7 @@ if (!Focus) {
 }
 
 if (global.debug) {
-draw_text(x,y,string(color))
+    draw_text(x,y,string(color))
 }
 </string>
           </argument>

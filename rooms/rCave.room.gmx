@@ -6,7 +6,7 @@
   <vsnap>64</vsnap>
   <hsnap>64</hsnap>
   <isometric>0</isometric>
-  <speed>45</speed>
+  <speed>40</speed>
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
@@ -16,7 +16,7 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1008</w>
+    <w>1016</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>3</page>
-    <xoffset>-44</xoffset>
-    <yoffset>-19</yoffset>
+    <page>1</page>
+    <xoffset>-60</xoffset>
+    <yoffset>176</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="background0" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -297,7 +297,6 @@
     <instance objName="oDirt" x="256" y="2304" name="inst_246DB925" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDirt" x="256" y="2368" name="inst_FA8484A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDirt" x="320" y="2368" name="inst_6C7255B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDirt" x="256" y="2432" name="inst_5054426B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDirt" x="64" y="2304" name="inst_5C15F412" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDirt" x="960" y="2112" name="inst_CBCD5FA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer" x="128" y="2432" name="inst_E7BC8323" locked="0" code="//firstplayer = true&#xA;//instance_create(x,y,oCamera)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

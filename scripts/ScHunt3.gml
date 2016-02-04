@@ -1,4 +1,16 @@
-if instance_exists(oFood) {
+// Hunt Players
+
+var mdist=500,d,Target=noone;
+with (oPlayerParent) with (other) if (ScCanSee(other.id)) {
+    d=distance_to_object(other)
+    if (d<mdist) {mdist=d Target=other.id}
+}
+if (Target && mdist<500) {
+    direction=angle_approach(direction,point_direction(x,y,Target.x,Target.y),Agility)
+} else if (speed<0.24) speed=0
+
+/*
+if instance_exists(oPlayerParent) {
 
     Hunt = instance_nearest(x,y,oPlayerParent) 
     
@@ -15,3 +27,5 @@ if instance_exists(oFood) {
     } else { if speed < .24 { speed = 0 } }
     
 }
+*/
+

@@ -9,5 +9,5 @@ Target = argument0
 if collision_line(x,y,Target.x,Target.y,oSolid,false,true){
 return false;
 } else {
-return true;
+return id;
 }

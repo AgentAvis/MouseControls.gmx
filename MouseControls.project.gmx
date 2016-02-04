@@ -42,6 +42,14 @@
     <sprite>sprites\sPredator</sprite>
     <sprite>sprites\sFish</sprite>
     <sprite>sprites\sprite14</sprite>
+    <sprite>sprites\sTube3</sprite>
+    <sprite>sprites\sTube2</sprite>
+    <sprite>sprites\sTube1</sprite>
+    <sprite>sprites\sStand</sprite>
+    <sprite>sprites\sColorButton</sprite>
+    <sprite>sprites\sprite22_tails</sprite>
+    <sprite>sprites\sprite21_agility</sprite>
+    <sprite>sprites\sprite22</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -85,17 +93,18 @@
     <object>objects\oLightingController</object>
     <object>objects\oLightingController_shit</object>
     <object>objects\oDirt</object>
-    <object>objects\oPlayer</object>
     <object>objects\oSolid</object>
     <object>objects\oString</object>
     <object>objects\oString2</object>
     <object>objects\oThing</object>
     <object>objects\oPlant</object>
+    <object>objects\oPlayerParent</object>
     <object>objects\oBullet</object>
+    <object>objects\oPlayer</object>
+    <object>objects\oBulletEdior</object>
     <object>objects\oPredator</object>
     <object>objects\oPlayerAI</object>
     <object>objects\oFood</object>
-    <object>objects\oPlayerParent</object>
     <object>objects\oCamera</object>
     <object>objects\oMouse</object>
     <object>objects\oDj</object>
@@ -104,6 +113,14 @@
     <object>objects\oCredits</object>
     <object>objects\object21</object>
     <object>objects\gotonext</object>
+    <object>objects\object24</object>
+    <object>objects\oTube2</object>
+    <object>objects\oTube1</object>
+    <object>objects\oTube3</object>
+    <object>objects\oAgility</object>
+    <object>objects\oTails</object>
+    <object>objects\oColorButton</object>
+    <object>objects\oStand</object>
     <object>objects\oTodo</object>
   </objects>
   <rooms name="rooms">
@@ -117,6 +134,7 @@
     <room>rooms\rTestRoom</room>
     <room>rooms\rTestRoom2</room>
     <room>rooms\rControls</room>
+    <room>rooms\rEditor</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

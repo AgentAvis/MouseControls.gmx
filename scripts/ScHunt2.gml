@@ -1,3 +1,4 @@
+
 if instance_exists(oFood) {
 
     Hunt = instance_nearest(x,y,oFood) 

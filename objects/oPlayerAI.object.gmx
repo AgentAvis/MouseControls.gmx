@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>ID = id
+//length VV
 StringNum = 6
+//TailNum VV
+TailNum = 7
 
 oBullet1 = false
 
@@ -36,7 +39,7 @@ Timerr = 0
 
 Size = 600
 
-repeat (8) {
+repeat (TailNum) {
     String = instance_copy(false)
         with (String) {
             instance_change(oString,true)

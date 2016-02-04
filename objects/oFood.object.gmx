@@ -32,7 +32,7 @@ StringNum = 2
 dir = ceil(random_range(0,2))
 
 direction = random(360)
-
+Agility = 20
 Timerrr = 0
 TimeAlive = 0
 Fetile = false

@@ -32,7 +32,11 @@ Timerr = 0
 sizetimerr = 0
 size = 750 * 1.5
 ID = id
+//Tail Length vv
 StringNum = 4
+//TailNum vv
+TailNum = ceil(random_range(3,7))
+
 overide = false
 loop = 1
 Loop = 1
@@ -54,7 +58,7 @@ vari = random_range(-40,40)
 xX = x + lengthdir_x(-5, image_angle)
 yY = y + lengthdir_y(-5, image_angle)
 
-repeat (5) {
+repeat (TailNum) {
     String = instance_copy(false)
         with (String) {
             instance_change(oString,true)
