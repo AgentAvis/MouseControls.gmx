@@ -126,6 +126,7 @@
   <rooms name="rooms">
     <room>rooms\rInitialization</room>
     <room>rooms\rMenu</room>
+    <room>rooms\room11</room>
     <room>rooms\rCave</room>
     <room>rooms\rBoxOne</room>
     <room>rooms\rSplitBox</room>
